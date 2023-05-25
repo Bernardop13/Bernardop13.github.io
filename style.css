@@ -160,58 +160,52 @@ nav ul li a:hover {
     z-index: 2;
 }
 
-.btn-box a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #557a95;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color: #cde5df;
 }
-
-.btn-box a:hover {
+.project-title{
     color: #00abf0;
+    font-size: 80px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+.projects-content{
+    display: flex;
+    justify-content: space-around;
+}
+.projects-content article{
+    width: 270px;
+    height: 400px;
+    padding: 40px;
+    margin: 40px;
+    background-color: #557a95;
+}
+.projects-content article:hover{
+    background-color: #00abf0;
+    cursor: pointer;
+}
+h3{
+    color: #ededed;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.projects-content p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
 }
 
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #557a95;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #00abf0;
-}
-
-.btn-box a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #557a95;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before {
-    width: 100%;
-}
 
 .home-sci {
     position: absolute;
